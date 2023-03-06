@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}   % Tipo de documento
+\usepackage[utf8]{inputenc}     % Uso de la codificación UTF-8
+\usepackage{comment}            %Se importa el uso de comentarios multilínea
+
+\begin{comment}
+    Esto sería un comentario multilínea
+\end{comment}
+
+\title{Primer documento de prueba}   % Título se que importa a \maketitle
+\author{Cristóbal José Jiménez Gómez % Autor; todo esto se importa a \maketitle
+    \thanks{A mi familia, amigos y compañeros de la universidad.}}  %agradecimientos 
+\date{25/02/2023} %Se peude poner la fecha de forma manual
+\date{\today} % Cada vez que se hace un build se genera la fecha; estas 2 se importan a \maketitle
+
+\begin{document}    %Empieza el documento
+
+    \begin{titlepage}   %Empieza el título
+        \maketitle
+    \end{titlepage}     %Sacaba el título
+
+    %Párrafo normal
+    Esto sería aun primer párrafo rollo de chilleito, ya tu sabe.
+
+    %Párrafo de resumen
+    \begin{abstract}
+        Esto rpetende ser un texto un poco más formal. El cual contiene un resumen de cosa.
+    \end{abstract}
+
+    %Parrafo normal
+    Y aquí voy a partir una línea, porque puedo y porque \\ quiero
+
+    %Distintos tipos de formato
+    Formatos:\\
+    - Para hacer letras en \textbf{negrita} se usará textbf(palabra).\\
+    - Para hacer que sean \underline{subrayadas} se usará underline(palabra).\\
+    - Para hacer que sean \textit{cursiva} se usará textit(palabra).\\
+    - Con \emph{énfasis} será negrita y cursiva: emph(palara) - (para resaltar el texto en el formato en elq ue se encuentra)
+
+
+    Ver los distintos tipos de listas aquí \url{video que lo explica}{https://www.youtube.com/watch?v=fZiOXWpRNTE}
+    %Listas
+    Listas:\\
+    Lista enumerada:
+    \begin{enumerate}
+        \item Item 1
+        \item Item 2
+        \begin{enumerate}
+            \item Item 2.1
+            \item Item 2.2
+            \begin{enumerate}
+                \item Item 2.2.1
+                \item Item 2.2.2
+                \begin{enumerate}
+                    \item Item 2.2.2.1
+                    \item Item 2.2.2.2
+                \end{enumerate}
+            \end{enumerate}
+            \item El mejor
+        \end{enumerate}
+    \end{enumerate}
+
+
+    Lista no enumerada:
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+        \begin{itemize}
+            \item Item 2.1
+            \item Item 2.2
+            \begin{itemize}
+                \item Item 2.2.1
+                \item Item 2.2.2
+                \begin{itemize}
+                    \item Item 2.2.2.1
+                    \item Item 2.2.2.2
+                \end{itemize}
+            \end{itemize}
+            \item El mejor
+        \end{itemize}
+    \end{itemize}
+\end{document}  %Saacaba el documento
